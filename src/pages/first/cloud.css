@@ -1,0 +1,89 @@
+.cloud_one{
+    position:absolute;
+    background-color: rgb(180,210,230);
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.web0_deep_cloud_0{
+    animation-name: web0_deep_cloud_0;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes web0_deep_cloud_0 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(-30vh,0px);
+    }
+}
+.web0_deep_cloud_1{
+    animation-name: web0_deep_cloud_1;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes web0_deep_cloud_1 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-100vw,0px);
+    }
+    50.0000000000001%{
+        transform: translate(100vw,0px);
+    }
+    100%{
+        transform: translate(0vh,0px);
+    }
+}
+.web0_deep_cloud_4{
+    animation-name: web0_deep_cloud_4;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes web0_deep_cloud_4 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-100vw,0px);
+    }
+    99.99999999%{
+        transform: translate(-200vw,0px);
+    }
+    100%{
+        transform: translate(0vh,0px);
+    }
+}
+.web0_deep_cloud_2{
+    animation-name: web0_deep_cloud_2;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes web0_deep_cloud_2 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(-20vh,0px);
+    }
+}
+.web0_deep_cloud_3{
+    animation-name: web0_deep_cloud_3;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes web0_deep_cloud_3 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(-15vh,0px);
+    }
+}

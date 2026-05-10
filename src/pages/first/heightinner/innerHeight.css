@@ -1,0 +1,17 @@
+open_0{
+    animation-name: open_0;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes open_0 {
+    0%{
+        -webkit-mask:linear-gradient(90deg,transparent 0%,black 100%);
+        mask:linear-gradient(90deg,transparent 0%,black 100%);
+    }
+    100%{
+        -webkit-mask:linear-gradient(90deg,black 0%,black 100%);
+        mask:linear-gradient(90deg,black 0%,black 100%);
+    }
+}
