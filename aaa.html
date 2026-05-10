@@ -15,16 +15,21 @@
     </style>
 </head>
 <body>
-    <div style="height:150px;width:150px;background-color: black;"></div>
-    <div style="position:absolute;height:500px;width:500px;background-color: rgb(0, 255, 0);">
-        <div style="height:100%;width:100%;
-        background:Linear-gradient(
-            180deg,
-            rgb(0,0,0,0) 0%,
-            rgb(255, 255, 255,0.5) 30%,
-            rgba(255, 255, 255,1) 100%
-        )"></div>
-    </div>
+    <div style="position:fixed;left:20%;top:10%;width:60%;height:80%;background-color:rgb(198, 235, 250);overflow: hidden;">
+        <div style="position:absolute;height:8vw;width:8vw;left:3vh;top:3vh;overflow: hidden;">
+            <div style="position:relative;height:190%;width:190%;border: 3px solid red;border-radius: 50%;left:-100%;top:-100%;"></div>
+        </div>
+        <div style="position:absolute;height:8vw;width:8vw;right:3vh;top:3vh;overflow: hidden;">
+            <div style="position:relative;height:190%;width:190%;border: 3px solid red;border-radius: 50%;left:0%;top:-100%;"></div>
+        </div>
+        <div style="position:absolute;height:8vw;width:8vw;left:3vh;bottom:3vh;overflow: hidden;">
+            <div style="position:relative;height:190%;width:190%;border: 3px solid red;border-radius: 50%;left:-100%;top:0%;"></div>
+        </div>
+        <div style="position:absolute;height:8vw;width:8vw;right:3vh;bottom:3vh;overflow: hidden;">
+            <div style="position:relative;height:190%;width:190%;border: 3px solid red;border-radius: 50%;left:0%;top:0%;"></div>
+        </div>
+        <div style="position:absolute;top:3vh;background-color: red;height:3px;width:64%;left:17%"></div>
+    </div>  
 </body>
 
 </html>

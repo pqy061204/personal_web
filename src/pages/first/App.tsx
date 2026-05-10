@@ -33,7 +33,7 @@ const Bgound = () => {
     }
     let inner : ReactNode[] ;
 
-    let gdcolor = 'rgb(47, 255, 0)';//背景颜色
+    let gdcolor = 'rgb(47, 255, 0)';//背景颜色（111，202，218）~（16，8，32）
     inner = [];
     App_jiemian = 0;
     if (scrollY < innerHeight*0.8) {//界面1
@@ -50,8 +50,8 @@ const Bgound = () => {
         );
         //背景
         let a =1 - (scrollY / innerHeight)**5;
-        gdcolor = 'rgb(' + (111 * a) + ',' + (202 * a) + ',' + (218 * a) + ')';
-    } else if (scrollY < innerHeight *1.5) {//界面一与界面二的过渡
+        gdcolor = 'rgb(' + (95 * a +16) + ',' + (194 * a+8) + ',' + (186 * a+32) + ')';
+    } else if (scrollY < innerHeight *1.5) {//界面一与界面二的过渡（111，202，218）~（16，8，32）
         App_jiemian = 0.1;
         inner.push(
             <Jiemian0 
@@ -75,7 +75,8 @@ const Bgound = () => {
         );
         
         let a =1 - (scrollY / innerHeight)**5;
-        gdcolor = 'rgb(' + (111 * a) + ',' + (202 * a) + ',' + (218 * a) + ')';
+        if (a<0) a=0
+        gdcolor = 'rgb(' + (95 * a +16) + ',' + (194 * a+8) + ',' + (186 * a+32) + ')';
     }else if (scrollY < innerHeight * 3.5) {//界面二，界面二与界面三的过渡
         App_jiemian = 1;
         inner.push();
@@ -90,11 +91,11 @@ const Bgound = () => {
             />
         );
         //过渡区分
-        if (scrollY / innerHeight < 2.5) {
-            gdcolor = 'rgb(0,0,0)';
+        if (scrollY / innerHeight < 3.3) {
+            gdcolor = 'rgb(16, 8, 32)';
         } else{
-            let a = -((2.5 - scrollY / innerHeight)**7);
-            gdcolor = 'rgb(' + (193 * a) + ',' + (44 * a) + ',' + (21 * a) + ')';
+            let a = -((3.3 - scrollY / innerHeight)**7);
+            gdcolor = 'rgb(47, 255, 0)';
         }
     } else if (scrollY <= innerHeight * 5) {//界面二与界面三的过渡，界面三
         App_jiemian = 2;

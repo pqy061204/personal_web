@@ -1,0 +1,6 @@
+a=float(input('x'))
+b=float(input('y'))
+c=float(input('x'))
+d=float(input('y'))
+k=(b-d)/(a-c)
+print('y='+str(k)+'*x+'+str(b-k*a))

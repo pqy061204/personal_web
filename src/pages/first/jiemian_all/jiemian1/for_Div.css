@@ -1,0 +1,24 @@
+open_0{
+    animation-name: open_0;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+/**
+ *混合模式
+ */
+.transparent-img {
+  /* 核心：白色会自动融合背景，变成「透明效果」 */
+  mix-blend-mode: multiply; 
+  /* 小优化：消除边缘白边 */
+  filter: brightness(0.99);
+}
+.blend-img {
+  mix-blend-mode: lighten; /* 白色自动变透明，图案保留 */
+  width: 300px; /* 自定义图片大小 */
+}
+.text-overlay {
+  writing-mode: vertical-rl; /* 文字从上到下，整行从右往左排（传统竖排） */
+  text-orientation: upright; /* 让文字保持正立，不会旋转90度 */
+}
